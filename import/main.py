@@ -13,7 +13,7 @@ images_directory = "../images"
 
 
 def get_image_list():
-    res = requests.get(f"{BASE_URL}/images?limit=3", headers=headers)
+    res = requests.get(f"{BASE_URL}/images?limit=1000", headers=headers)
     data = res.json()
     return data["items"]
 
